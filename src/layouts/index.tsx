@@ -17,9 +17,7 @@ const _layout: React.FunctionComponent<I_layoutProps> = (props) => {
             >
             <NavLeft/>
         </Sider>
-        <Content
-            
-        >
+        <Content style={{maxHeight:"100vh",overflow:"scroll"}}>
             <NavHeader/>
             <Content 
                 style={{minHeight:"60vh",border:"1px solid #000",margin:'12px'}}>

@@ -4,9 +4,13 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
+  history:{
+    type:'hash'
+  },
+  copy:['/public'],
+  publicPath:'./',
   // routes: [
   //   { path: '/', component: '@/pages/index' },
   // ],
-  copy:['/public'],
   fastRefresh: {},
 });
