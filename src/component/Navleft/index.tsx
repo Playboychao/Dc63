@@ -3,6 +3,7 @@ import { Menu } from 'antd';
 import menuConfig,{ menuItem } from "./menuConfig";
 import { NavLink } from "umi";
 
+
 const { Item,SubMenu } = Menu;
 
 import './style.less';
@@ -30,9 +31,11 @@ const NavLeft: React.FunctionComponent<NavLeftProps> = (props) => {
             }
         })
     }
-
   return <div className="NavLeft">
-{/* theme主题 */}
+      <div className="Icon">
+          <img src="./asset/logo-ant.svg" alt=""/>
+            <h1>TS 单车</h1>
+      </div>
       <Menu theme={'dark'}>
         {renderMenu(menuConfig)}
       </Menu>

@@ -7,5 +7,6 @@ export default defineConfig({
   // routes: [
   //   { path: '/', component: '@/pages/index' },
   // ],
+  copy:['/public'],
   fastRefresh: {},
 });

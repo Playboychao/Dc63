@@ -17,14 +17,18 @@ const _layout: React.FunctionComponent<I_layoutProps> = (props) => {
             >
             <NavLeft/>
         </Sider>
-        <Content>
-            <Header 
-                style={{background: "#fff"}}
-                >
-                    标题栏
-            </Header>
-            {props.children}
-            <Footer>页脚</Footer>
+        <Content
+            
+        >
+            <NavHeader/>
+            <Content 
+                style={{minHeight:"60vh",border:"1px solid #000",margin:'12px'}}>
+                {props.children}
+            </Content>
+            <Footer
+                style={{textAlign:"center",color:"#ccc"}}
+            >建议使用 Chrome打开 &copy;2020 PlayBoyChao All Right Remain
+            </Footer>
         </Content>
   </Layout>;
 };
