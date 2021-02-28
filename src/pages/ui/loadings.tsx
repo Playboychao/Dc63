@@ -12,7 +12,7 @@ const LoaingPage: React.FunctionComponent<ILoaingPageProps> = (props) => {
 
     const [ spinState,setSpin ] = React.useState<boolean>(false);
 
-  return <div className="LoadinPage">
+  return <div className="LoadingPage">
       <Card title={'spin展示'}>
           <Spin size='small'/>
           <Spin size='default'/>
